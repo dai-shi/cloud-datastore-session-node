@@ -40,7 +40,7 @@ module.exports = function(session) {
 
       var result;
       try {
-        result = JSON.parse(entity.data.data);
+        result = JSON.parse(entity.data);
       } catch (er) {
         return fn(er);
       }
